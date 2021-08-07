@@ -1,0 +1,813 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="node_modules/@fortawesome/fontawesome-free/css/all.min.css" />
+    <link rel="stylesheet" href="node_modules/bootstrap-social/bootstrap-social.css" />
+    <link rel="stylesheet" href="css/styles.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+
+    <title>Category</title>
+</head>
+<body>
+    <!-- Header Start -->
+    <div class="container-fluid bg-white nav-border high-z">
+        <div class="container-h">
+            <nav class="navbar navbar-expand-lg navbar-light position-relative">
+                <a class="navbar-brand" href="#"><i class="fa fa-tag"></i> LOGO<span class="sr-only">(current)</span></a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleMenu" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarToggleMenu">
+                    <div class="d-flex flex-column flex-lg-row w-100">
+                        <div class=" col-12 col-lg-6 d-flex flex-row">
+                            <span class="nav-item">
+                                <a role="button" id="catButton" class="btn">
+                                    <i class="fas fa-th-large"></i> Categories <i class="fas fa-sign-in-alt-lg"></i>
+                                </a>
+                            </span>
+                        </div>
+                        <div class="col-12 col-lg-6 d-flex flex-row justify-content-end align-items-center">
+                            <div class="nav-item">
+                                <a role="button" id="cartButton" class="btn pe-5">
+                                    <i class="fas fa-shopping-cart"></i>
+                                </a>
+                            </div>
+                            <a role="button" id="loginButton" class="login-h ps-5 pe-4 btn">
+                                Login
+                            </a>
+                            <button class="btn btn-primary">Sign-up</button>
+                        </div>
+                    </div>
+                   
+                </div>
+            </nav>
+        </div>
+    </div>
+    <!-- Category Modal Start -->
+    <div id="catModal" class="modal modal-cat" role="dialog">
+        <div class="modal-dialog modal-dialog-full-width bg-white" role="document">
+            <div class="modal-content modal-content-full-width">
+                <div class="container-h">
+        
+                            <div class="accordion d-flex flex-wrap pt-5" id="accordionExample">
+                                <div class="cat-accordion-item col-12 col-md-4 col-xl-2">
+                                    <div class="accordion-header" id="headingTwo">
+                                        <button class="cat-button collapsed d-md-block md-disabled" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                                            Bags & Luggage
+                                        </button>
+                                    </div>
+                                    <div id="collapseOne" class="accordion-collapse collapse d-md-block" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                                        <div class="cat-accordion-body">
+                                            <ul class="cat-ul">
+                                                <li class="cat-li">
+                                                    <div class="cat-row">
+                                                        <div class="cat-items-wrap">
+                                                            <a class="cat-anchor" href="#">Tote Bags</a>
+                                                            <div class="cat-i-wrap">
+                                                                <div class="cat-i bg-primary text-center">
+                                                                    <i class="fas fa-shopping-bag text-white"></i>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li class="cat-li">
+                                                    <div class="cat-row">
+                                                        <div class="cat-items-wrap">
+                                                            <a class="cat-anchor" href="#">Gym Bags</a>
+                                                            <div class="cat-i-wrap">
+                                                                <div class="cat-i bg-primary text-center">
+                                                                    <i class="fas fa-suitcase text-white"></i>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li class="cat-li">
+                                                    <div class="cat-row">
+                                                        <div class="cat-items-wrap">
+                                                            <a class="cat-anchor" href="#">Luggage</a>
+                                                            <div class="cat-i-wrap">
+                                                                <div class="cat-i bg-primary text-center">
+                                                                    <i class="fas fa-suitcase-rolling text-white"></i>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="cat-accordion-item col-12 col-md-4 col-xl-2">
+                                    <div class="accordion-header" id="headingTwo">
+                                        <button class="cat-button collapsed d-md-block md-disabled" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                                            Bags & Luggage
+                                        </button>
+                                    </div>
+                                    <div id="collapseOne" class="accordion-collapse collapse d-md-block" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                                        <div class="cat-accordion-body">
+                                            <ul class="cat-ul">
+                                                <li class="cat-li">
+                                                    <div class="cat-row">
+                                                        <div class="cat-items-wrap">
+                                                            <a class="cat-anchor" href="#">Tote Bags</a>
+                                                            <div class="cat-i-wrap">
+                                                                <div class="cat-i bg-primary text-center">
+                                                                    <i class="fas fa-shopping-bag text-white"></i>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li class="cat-li">
+                                                    <div class="cat-row">
+                                                        <div class="cat-items-wrap">
+                                                            <a class="cat-anchor" href="#">Gym Bags</a>
+                                                            <div class="cat-i-wrap">
+                                                                <div class="cat-i bg-primary text-center">
+                                                                    <i class="fas fa-suitcase text-white"></i>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li class="cat-li">
+                                                    <div class="cat-row">
+                                                        <div class="cat-items-wrap">
+                                                            <a class="cat-anchor" href="#">Luggage</a>
+                                                            <div class="cat-i-wrap">
+                                                                <div class="cat-i bg-primary text-center">
+                                                                    <i class="fas fa-suitcase-rolling text-white"></i>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="cat-accordion-item col-12 col-md-4 col-xl-2">
+                                    <div class="accordion-header" id="headingTwo">
+                                        <button class="cat-button collapsed d-md-block md-disabled" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                                            Bags & Luggage
+                                        </button>
+                                    </div>
+                                    <div id="collapseOne" class="accordion-collapse collapse d-md-block" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                                        <div class="cat-accordion-body">
+                                            <ul class="cat-ul">
+                                                <li class="cat-li">
+                                                    <div class="cat-row">
+                                                        <div class="cat-items-wrap">
+                                                            <a class="cat-anchor" href="#">Tote Bags</a>
+                                                            <div class="cat-i-wrap">
+                                                                <div class="cat-i bg-primary text-center">
+                                                                    <i class="fas fa-shopping-bag text-white"></i>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li class="cat-li">
+                                                    <div class="cat-row">
+                                                        <div class="cat-items-wrap">
+                                                            <a class="cat-anchor" href="#">Gym Bags</a>
+                                                            <div class="cat-i-wrap">
+                                                                <div class="cat-i bg-primary text-center">
+                                                                    <i class="fas fa-suitcase text-white"></i>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li class="cat-li">
+                                                    <div class="cat-row">
+                                                        <div class="cat-items-wrap">
+                                                            <a class="cat-anchor" href="#">Luggage</a>
+                                                            <div class="cat-i-wrap">
+                                                                <div class="cat-i bg-primary text-center">
+                                                                    <i class="fas fa-suitcase-rolling text-white"></i>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="cat-accordion-item col-12 col-md-4 col-xl-2">
+                                    <div class="accordion-header" id="headingTwo">
+                                        <button class="cat-button collapsed d-md-block md-disabled" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                                            Bags & Luggage
+                                        </button>
+                                    </div>
+                                    <div id="collapseOne" class="accordion-collapse collapse d-md-block" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                                        <div class="cat-accordion-body">
+                                            <ul class="cat-ul">
+                                                <li class="cat-li">
+                                                    <div class="cat-row">
+                                                        <div class="cat-items-wrap">
+                                                            <a class="cat-anchor" href="#">Tote Bags</a>
+                                                            <div class="cat-i-wrap">
+                                                                <div class="cat-i bg-primary text-center">
+                                                                    <i class="fas fa-shopping-bag text-white"></i>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li class="cat-li">
+                                                    <div class="cat-row">
+                                                        <div class="cat-items-wrap">
+                                                            <a class="cat-anchor" href="#">Gym Bags</a>
+                                                            <div class="cat-i-wrap">
+                                                                <div class="cat-i bg-primary text-center">
+                                                                    <i class="fas fa-suitcase text-white"></i>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li class="cat-li">
+                                                    <div class="cat-row">
+                                                        <div class="cat-items-wrap">
+                                                            <a class="cat-anchor" href="#">Luggage</a>
+                                                            <div class="cat-i-wrap">
+                                                                <div class="cat-i bg-primary text-center">
+                                                                    <i class="fas fa-suitcase-rolling text-white"></i>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="cat-accordion-item col-12 col-md-4 col-xl-2">
+                                    <div class="accordion-header" id="headingTwo">
+                                        <button class="cat-button collapsed d-md-block md-disabled" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                                            Bags & Luggage
+                                        </button>
+                                    </div>
+                                    <div id="collapseOne" class="accordion-collapse collapse d-md-block" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                                        <div class="cat-accordion-body">
+                                            <ul class="cat-ul">
+                                                <li class="cat-li">
+                                                    <div class="cat-row">
+                                                        <div class="cat-items-wrap">
+                                                            <a class="cat-anchor" href="#">Tote Bags</a>
+                                                            <div class="cat-i-wrap">
+                                                                <div class="cat-i bg-primary text-center">
+                                                                    <i class="fas fa-shopping-bag text-white"></i>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li class="cat-li">
+                                                    <div class="cat-row">
+                                                        <div class="cat-items-wrap">
+                                                            <a class="cat-anchor" href="#">Gym Bags</a>
+                                                            <div class="cat-i-wrap">
+                                                                <div class="cat-i bg-primary text-center">
+                                                                    <i class="fas fa-suitcase text-white"></i>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li class="cat-li">
+                                                    <div class="cat-row">
+                                                        <div class="cat-items-wrap">
+                                                            <a class="cat-anchor" href="#">Luggage</a>
+                                                            <div class="cat-i-wrap">
+                                                                <div class="cat-i bg-primary text-center">
+                                                                    <i class="fas fa-suitcase-rolling text-white"></i>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="cat-accordion-item col-12 col-md-4 col-xl-2">
+                                    <div class="accordion-header" id="headingTwo">
+                                        <button class="cat-button collapsed d-md-block md-disabled" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                                            Bags & Luggage
+                                        </button>
+                                    </div>
+                                    <div id="collapseOne" class="accordion-collapse collapse d-md-block" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                                        <div class="cat-accordion-body">
+                                            <ul class="cat-ul">
+                                                <li class="cat-li">
+                                                    <div class="cat-row">
+                                                        <div class="cat-items-wrap">
+                                                            <a class="cat-anchor" href="#">Tote Bags</a>
+                                                            <div class="cat-i-wrap">
+                                                                <div class="cat-i bg-primary text-center">
+                                                                    <i class="fas fa-shopping-bag text-white"></i>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li class="cat-li">
+                                                    <div class="cat-row">
+                                                        <div class="cat-items-wrap">
+                                                            <a class="cat-anchor" href="#">Gym Bags</a>
+                                                            <div class="cat-i-wrap">
+                                                                <div class="cat-i bg-primary text-center">
+                                                                    <i class="fas fa-suitcase text-white"></i>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li class="cat-li">
+                                                    <div class="cat-row">
+                                                        <div class="cat-items-wrap">
+                                                            <a class="cat-anchor" href="#">Luggage</a>
+                                                            <div class="cat-i-wrap">
+                                                                <div class="cat-i bg-primary text-center">
+                                                                    <i class="fas fa-suitcase-rolling text-white"></i>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                </div>        
+            </div>
+        </div>
+    </div>
+    <!-- Products Section Start -->
+    <div class="container-fluid nav-spacer">
+        <div class="container-h d-flex mt-5">
+            <div class="col-3 d-none d-lg-block">
+                <!-- Price Filter -->
+                <div class="accordion d-flex flex-wrap mb-3" id="priceAccordion">
+                    <div class="fil-accordion-item col-12">
+                        <div class="accordion-header" id="filterHeadingOne">
+                            <button class="fil-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#priceFilter" aria-expanded="false" aria-controls="filterOne">
+                                Price
+                            </button>
+                        </div>
+                        <div id="priceFilter" class="accordion-collapse collapse show" aria-labelledby="filterHeadingOne" data-bs-parent="#priceAccordion">
+                            <div class="cat-accordion-body pb-3">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="twentyPlus">
+                                    <label class="form-check-label" for="flexCheckDefault">
+                                      $20.00 & Above
+                                    </label>
+                                  </div>
+                                  <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
+                                    <label class="form-check-label" for="flexCheckChecked">
+                                      $10.00 - $19.99
+                                    </label>
+                                  </div>
+                                  <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
+                                    <label class="form-check-label" for="flexCheckChecked">
+                                      $5.00 - $9.99
+                                    </label>
+                                  </div>
+                                  <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
+                                    <label class="form-check-label" for="flexCheckChecked">
+                                      $3.00 - $4.99
+                                    </label>
+                                  </div>
+                                  <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
+                                    <label class="form-check-label" for="flexCheckChecked">
+                                      $1.00 - $2.99
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- MOQ Filter -->
+                <div class="accordion d-flex flex-wrap mb-3" id="moqAccordion">
+                    <div class="fil-accordion-item col-12">
+                        <div class="accordion-header" id="filterHeadingTwo">
+                            <button class="fil-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#moqFilter" aria-expanded="false" aria-controls="filterOne">
+                                Minimum Order
+                            </button>
+                        </div>
+                        <div id="moqFilter" class="accordion-collapse collapse show" aria-labelledby="filterHeadingTwo" data-bs-parent="#moqAccordion">
+                            <div class="cat-accordion-body pb-3">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="twentyPlus">
+                                    <label class="form-check-label" for="flexCheckDefault">
+                                      1000 & Above
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
+                                    <label class="form-check-label" for="flexCheckChecked">
+                                      576 - 999
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
+                                    <label class="form-check-label" for="flexCheckChecked">
+                                      144 - 575
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
+                                    <label class="form-check-label" for="flexCheckChecked">
+                                      60 - 143
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
+                                    <label class="form-check-label" for="flexCheckChecked">
+                                      12 - 59
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Production Filter -->
+                <div class="accordion d-flex flex-wrap mb-3" id="proAccordion">
+                    <div class="fil-accordion-item col-12">
+                        <div class="accordion-header" id="filterHeadingTwo">
+                            <button class="fil-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#proFilter" aria-expanded="false" aria-controls="filterOne">
+                                Production Time
+                            </button>
+                        </div>
+                        <div id="proFilter" class="accordion-collapse collapse" aria-labelledby="filterHeadingTwo" data-bs-parent="#proAccordion">
+                            <div class="cat-accordion-body pb-3">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="twentyPlus">
+                                    <label class="form-check-label" for="flexCheckDefault">
+                                      24 hours 
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
+                                    <label class="form-check-label" for="flexCheckChecked">
+                                      72 hours
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
+                                    <label class="form-check-label" for="flexCheckChecked">
+                                      7 days
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
+                                    <label class="form-check-label" for="flexCheckChecked">
+                                      14 days
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-lg-9">
+                <div class="d-flex ms-3">
+                    <div class="d-flex flex-wrap cat-row">
+                        <div class="col-6 col-md-3 col-20 mb-3 pe-3">
+                            <a href="/product-page.html" class="p-a">
+                                <img src="" alt="" class="cat-img-thumb bg-light">
+                                <p class="p-title p-title-truncate truncate-overflow">Product title and if it goes long it will be truncated at line 2</p>
+                            </a>
+                            <p class="cat-price text-primary">$0.99 - $2.45</p>
+                            <p class="p-min">Ready in: 24hrs</p>
+                            <p class="p-min">MOQ: 12</p>
+                        </div>
+                        <div class="col-6 col-md-3 col-20 mb-3 pe-3">
+                            <a href="/product-page.html" class="p-a">
+                                <img src="" alt="" class="cat-img-thumb bg-light">
+                                <p class="p-title p-title-truncate truncate-overflow">Product title and if it goes long it will be truncated at line 2</p>
+                            </a>
+                            <p class="cat-price text-primary">$0.99 - $2.45</p>
+                            <p class="p-min">Ready in: 24hrs</p>
+                            <p class="p-min">MOQ: 12</p>
+                        </div>
+                        <div class="col-6 col-md-3 col-20 mb-3 pe-3">
+                            <a href="/product-page.html" class="p-a">
+                                <img src="" alt="" class="cat-img-thumb bg-light">
+                                <p class="p-title p-title-truncate truncate-overflow">Product title and if it goes long it will be truncated at line 2</p>
+                            </a>
+                            <p class="cat-price text-primary">$0.99 - $2.45</p>
+                            <p class="p-min">Ready in: 24hrs</p>
+                            <p class="p-min">MOQ: 12</p>
+                        </div>
+                        <div class="col-6 col-md-3 col-20 mb-3 pe-3">
+                            <a href="/product-page.html" class="p-a">
+                                <img src="" alt="" class="cat-img-thumb bg-light">
+                                <p class="p-title p-title-truncate truncate-overflow">Product title and if it goes long it will be truncated at line 2</p>
+                            </a>
+                            <p class="cat-price text-primary">$0.99 - $2.45</p>
+                            <p class="p-min">Ready in: 24hrs</p>
+                            <p class="p-min">MOQ: 12</p>
+                        </div>
+                        <div class="col-6 col-md-3 col-20 mb-3 pe-3">
+                            <a href="/product-page.html" class="p-a">
+                                <img src="" alt="" class="cat-img-thumb bg-light">
+                                <p class="p-title p-title-truncate truncate-overflow">Product title and if it goes long it will be truncated at line 2</p>
+                            </a>
+                            <p class="cat-price text-primary">$0.99 - $2.45</p>
+                            <p class="p-min">Ready in: 24hrs</p>
+                            <p class="p-min">MOQ: 12</p>
+                        </div>
+                        <div class="col-6 col-md-3 col-20 mb-3 pe-3">
+                            <a href="/product-page.html" class="p-a">
+                                <img src="" alt="" class="cat-img-thumb bg-light">
+                                <p class="p-title p-title-truncate truncate-overflow">Product title and if it goes long it will be truncated at line 2</p>
+                            </a>
+                            <p class="cat-price text-primary">$0.99 - $2.45</p>
+                            <p class="p-min">Ready in: 24hrs</p>
+                            <p class="p-min">MOQ: 12</p>
+                        </div>
+                        <div class="col-6 col-md-3 col-20 mb-3 pe-3">
+                            <a href="/product-page.html" class="p-a">
+                                <img src="" alt="" class="cat-img-thumb bg-light">
+                                <p class="p-title p-title-truncate truncate-overflow">Product title and if it goes long it will be truncated at line 2</p>
+                            </a>
+                            <p class="cat-price text-primary">$0.99 - $2.45</p>
+                            <p class="p-min">Ready in: 24hrs</p>
+                            <p class="p-min">MOQ: 12</p>
+                        </div>
+                        <div class="col-6 col-md-3 col-20 mb-3 pe-3">
+                            <a href="/product-page.html" class="p-a">
+                                <img src="" alt="" class="cat-img-thumb bg-light">
+                                <p class="p-title p-title-truncate truncate-overflow">Product title and if it goes long it will be truncated at line 2</p>
+                            </a>
+                            <p class="cat-price text-primary">$0.99 - $2.45</p>
+                            <p class="p-min">Ready in: 24hrs</p>
+                            <p class="p-min">MOQ: 12</p>
+                        </div>
+                        <div class="col-6 col-md-3 col-20 mb-3 pe-3">
+                            <a href="/product-page.html" class="p-a">
+                                <img src="" alt="" class="cat-img-thumb bg-light">
+                                <p class="p-title p-title-truncate truncate-overflow">Product title and if it goes long it will be truncated at line 2</p>
+                            </a>
+                            <p class="cat-price text-primary">$0.99 - $2.45</p>
+                            <p class="p-min">Ready in: 24hrs</p>
+                            <p class="p-min">MOQ: 12</p>
+                        </div>
+                        <div class="col-6 col-md-3 col-20 mb-3 pe-3">
+                            <a href="/product-page.html" class="p-a">
+                                <img src="" alt="" class="cat-img-thumb bg-light">
+                                <p class="p-title p-title-truncate truncate-overflow">Product title and if it goes long it will be truncated at line 2</p>
+                            </a>
+                            <p class="cat-price text-primary">$0.99 - $2.45</p>
+                            <p class="p-min">Ready in: 24hrs</p>
+                            <p class="p-min">MOQ: 12</p>
+                        </div>
+                        <div class="col-6 col-md-3 col-20 mb-3 pe-3">
+                            <a href="/product-page.html" class="p-a">
+                                <img src="" alt="" class="cat-img-thumb bg-light">
+                                <p class="p-title p-title-truncate truncate-overflow">Product title and if it goes long it will be truncated at line 2</p>
+                            </a>
+                            <p class="cat-price text-primary">$0.99 - $2.45</p>
+                            <p class="p-min">Ready in: 24hrs</p>
+                            <p class="p-min">MOQ: 12</p>
+                        </div>
+                        <div class="col-6 col-md-3 col-20 mb-3 pe-3">
+                            <a href="/product-page.html" class="p-a">
+                                <img src="" alt="" class="cat-img-thumb bg-light">
+                                <p class="p-title p-title-truncate truncate-overflow">Product title and if it goes long it will be truncated at line 2</p>
+                            </a>
+                            <p class="cat-price text-primary">$0.99 - $2.45</p>
+                            <p class="p-min">Ready in: 24hrs</p>
+                            <p class="p-min">MOQ: 12</p>
+                        </div>
+                        <div class="col-6 col-md-3 col-20 mb-3 pe-3">
+                            <a href="/product-page.html" class="p-a">
+                                <img src="" alt="" class="cat-img-thumb bg-light">
+                                <p class="p-title p-title-truncate truncate-overflow">Product title and if it goes long it will be truncated at line 2</p>
+                            </a>
+                            <p class="cat-price text-primary">$0.99 - $2.45</p>
+                            <p class="p-min">Ready in: 24hrs</p>
+                            <p class="p-min">MOQ: 12</p>
+                        </div>
+                        <div class="col-6 col-md-3 col-20 mb-3 pe-3">
+                            <a href="/product-page.html" class="p-a">
+                                <img src="" alt="" class="cat-img-thumb bg-light">
+                                <p class="p-title p-title-truncate truncate-overflow">Product title and if it goes long it will be truncated at line 2</p>
+                            </a>
+                            <p class="cat-price text-primary">$0.99 - $2.45</p>
+                            <p class="p-min">Ready in: 24hrs</p>
+                            <p class="p-min">MOQ: 12</p>
+                        </div>
+                        <div class="col-6 col-md-3 col-20 mb-3 pe-3">
+                            <a href="/product-page.html" class="p-a">
+                                <img src="" alt="" class="cat-img-thumb bg-light">
+                                <p class="p-title p-title-truncate truncate-overflow">Product title and if it goes long it will be truncated at line 2</p>
+                            </a>
+                            <p class="cat-price text-primary">$0.99 - $2.45</p>
+                            <p class="p-min">Ready in: 24hrs</p>
+                            <p class="p-min">MOQ: 12</p>
+                        </div>
+                        <div class="col-6 col-md-3 col-20 mb-3 pe-3">
+                            <a href="/product-page.html" class="p-a">
+                                <img src="" alt="" class="cat-img-thumb bg-light">
+                                <p class="p-title p-title-truncate truncate-overflow">Product title and if it goes long it will be truncated at line 2</p>
+                            </a>
+                            <p class="cat-price text-primary">$0.99 - $2.45</p>
+                            <p class="p-min">Ready in: 24hrs</p>
+                            <p class="p-min">MOQ: 12</p>
+                        </div>
+                        <div class="col-6 col-md-3 col-20 mb-3 pe-3">
+                            <a href="/product-page.html" class="p-a">
+                                <img src="" alt="" class="cat-img-thumb bg-light">
+                                <p class="p-title p-title-truncate truncate-overflow">Product title and if it goes long it will be truncated at line 2</p>
+                            </a>
+                            <p class="cat-price text-primary">$0.99 - $2.45</p>
+                            <p class="p-min">Ready in: 24hrs</p>
+                            <p class="p-min">MOQ: 12</p>
+                        </div>
+                        <div class="col-6 col-md-3 col-20 mb-3 pe-3">
+                            <a href="/product-page.html" class="p-a">
+                                <img src="" alt="" class="cat-img-thumb bg-light">
+                                <p class="p-title p-title-truncate truncate-overflow">Product title and if it goes long it will be truncated at line 2</p>
+                            </a>
+                            <p class="cat-price text-primary">$0.99 - $2.45</p>
+                            <p class="p-min">Ready in: 24hrs</p>
+                            <p class="p-min">MOQ: 12</p>
+                        </div>
+                        <div class="col-6 col-md-3 col-20 mb-3 pe-3">
+                            <a href="/product-page.html" class="p-a">
+                                <img src="" alt="" class="cat-img-thumb bg-light">
+                                <p class="p-title p-title-truncate truncate-overflow">Product title and if it goes long it will be truncated at line 2</p>
+                            </a>
+                            <p class="cat-price text-primary">$0.99 - $2.45</p>
+                            <p class="p-min">Ready in: 24hrs</p>
+                            <p class="p-min">MOQ: 12</p>
+                        </div>
+                        <div class="col-6 col-md-3 col-20 mb-3 pe-3">
+                            <a href="/product-page.html" class="p-a">
+                                <img src="" alt="" class="cat-img-thumb bg-light">
+                                <p class="p-title p-title-truncate truncate-overflow">Product title and if it goes long it will be truncated at line 2</p>
+                            </a>
+                            <p class="cat-price text-primary">$0.99 - $2.45</p>
+                            <p class="p-min">Ready in: 24hrs</p>
+                            <p class="p-min">MOQ: 12</p>
+                        </div>
+                        <div class="col-6 col-md-3 col-20 mb-3 pe-3">
+                            <a href="/product-page.html" class="p-a">
+                                <img src="" alt="" class="cat-img-thumb bg-light">
+                                <p class="p-title p-title-truncate truncate-overflow">Product title and if it goes long it will be truncated at line 2</p>
+                            </a>
+                            <p class="cat-price text-primary">$0.99 - $2.45</p>
+                            <p class="p-min">Ready in: 24hrs</p>
+                            <p class="p-min">MOQ: 12</p>
+                        </div>
+                        <div class="col-6 col-md-3 col-20 mb-3 pe-3">
+                            <a href="/product-page.html" class="p-a">
+                                <img src="" alt="" class="cat-img-thumb bg-light">
+                                <p class="p-title p-title-truncate truncate-overflow">Product title and if it goes long it will be truncated at line 2</p>
+                            </a>
+                            <p class="cat-price text-primary">$0.99 - $2.45</p>
+                            <p class="p-min">Ready in: 24hrs</p>
+                            <p class="p-min">MOQ: 12</p>
+                        </div>
+                        <div class="col-6 col-md-3 col-20 mb-3 pe-3">
+                            <a href="/product-page.html" class="p-a">
+                                <img src="" alt="" class="cat-img-thumb bg-light">
+                                <p class="p-title p-title-truncate truncate-overflow">Product title and if it goes long it will be truncated at line 2</p>
+                            </a>
+                            <p class="cat-price text-primary">$0.99 - $2.45</p>
+                            <p class="p-min">Ready in: 24hrs</p>
+                            <p class="p-min">MOQ: 12</p>
+                        </div>
+                        <div class="col-6 col-md-3 col-20 mb-3 pe-3">
+                            <a href="/product-page.html" class="p-a">
+                                <img src="" alt="" class="cat-img-thumb bg-light">
+                                <p class="p-title p-title-truncate truncate-overflow">Product title and if it goes long it will be truncated at line 2</p>
+                            </a>
+                            <p class="cat-price text-primary">$0.99 - $2.45</p>
+                            <p class="p-min">Ready in: 24hrs</p>
+                            <p class="p-min">MOQ: 12</p>
+                        </div>
+                        <div class="col-6 col-md-3 col-20 mb-3 pe-3">
+                            <a href="/product-page.html" class="p-a">
+                                <img src="" alt="" class="cat-img-thumb bg-light">
+                                <p class="p-title p-title-truncate truncate-overflow">Product title and if it goes long it will be truncated at line 2</p>
+                            </a>
+                            <p class="cat-price text-primary">$0.99 - $2.45</p>
+                            <p class="p-min">Ready in: 24hrs</p>
+                            <p class="p-min">MOQ: 12</p>
+                        </div> 
+                    </div>
+                </div>
+                <div class="col-12 d-flex justify-content-center my-5 pe-2">
+                    <button class="btn btn-primary">Load More <i class="fas fa-sync-alt"></i></button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Footer Start -->
+    <footer class="mt-5">
+        <div class="container-fluid border-f">
+            <div class="container-h d-flex flex-row flex-wrap justify-content-between py-4 px-3 px-md-0">
+                <div class="col-12 col-lg-3 d-flex flex-column">
+                    <a class="navbar-brand text-dark" href="#"><i class="fa fa-tag"></i> LOGO<span class="sr-only">(current)</span></a>
+                    <p>A great tagline goes here</p>
+                    <ul class="d-flex flex-row p-0">
+                        <li class="social-li">
+                            <a href="#" class="social-a"><i class="fab fa-facebook"></i></a>
+                        </li>
+                        <li class="social-li">
+                            <a href="#" class="social-a"><i class="fab fa-instagram"></i></a>
+                        </li>
+                        <li class="social-li">
+                            <a href="#" class="social-a"><i class="fab fa-linkedin"></i></a>
+                        </li>
+                        <li class="social-li">
+                            <a href="#" class="social-a"><i class="fab fa-pinterest"></i></a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-6 col-md-3 col-lg-2 d-flex flex-column">
+                    <div class="footer-h">Company</div>
+                    <li class="footer-li">
+                        <a href="" class="footer-a">About</a>
+                    </li>
+                    <li class="footer-li">
+                        <a href="" class="footer-a">Contact</a>
+                    </li>
+                </div>
+                <div class="col-6 col-md-3 col-lg-2 d-flex flex-column">
+                    <div class="footer-h">Services</div>
+                    <li class="footer-li">
+                        <a href="" class="footer-a">Imprint</a>
+                    </li>
+                    <li class="footer-li">
+                        <a href="" class="footer-a">Printing</a>
+                    </li>
+                    <li class="footer-li">
+                        <a href="" class="footer-a">E-commerce Dev</a>
+                    </li>
+                </div>
+                <div class="col-6 col-md-3 col-lg-2 d-flex flex-column">
+                    <div class="footer-h">Support</div>
+                    <li class="footer-li">
+                        <a href="" class="footer-a">Tracking</a>
+                    </li>
+                    <li class="footer-li">
+                        <a href="" class="footer-a">Resources</a>
+                    </li>
+                    <li class="footer-li">
+                        <a href="" class="footer-a">Support Ticket</a>
+                    </li>
+                </div>
+                <div class="col-6 col-md-3 col-lg-3 d-flex flex-column">
+                    <div class="footer-h">Join Our List</div>
+                    <p>Get updates from us.</p>
+                    <div class=" mb-3">
+                        <input type="text" class="form-control mb-3" placeholder="" aria-label="Enter your email" aria-describedby="list-signup">
+                        <button class="btn btn-primary" type="button" id="listSignup">Subscribe</button>
+                      </div>
+                </div>
+            </div>
+        </div>
+        <div class="d-flex footer-base py-4 px-3 px-md-0">
+            <div class="container-h d-flex flex-row flex-wrap-reverse">
+                <div class="col-12 col-md-6">
+                   <p>© 2021 Blake Loyd Jackson -- lorem ipsum fecit</p>
+                </div>
+                <div class="col-12 col-md-6 d-flex flex-row justify-content-start justify-content-md-end">
+                    <a href="#" class="footer-base-a">Privacy Notice |</a>
+                    <a href="#" class="footer-base-a">Terms & Conditions</a>
+                </div>
+            </div>
+        </div>
+    </footer>  
+
+    <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
+    <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="JavaScript/scripts.js"></script>
+
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    
+</body>
+</html>
